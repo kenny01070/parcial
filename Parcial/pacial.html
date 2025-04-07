@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivero Vital</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: red;
+            padding: 10px 20px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .search-container {
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .search-container input {
+            width: 80%;
+            padding: 8px;
+            font-size: 1em;
+        }
+        .toggle-profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            background-color: #e5e596;
+            padding: 10px;
+        }
+        .nav-buttons button {
+            background-color: #f3f8c1;
+            border: 1px solid #ccc;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .greenhouse-list {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+        .greenhouse-card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        .greenhouse-card img {
+            width: 100%;
+        }
+        .greenhouse-card label {
+            display: block;
+            margin-top: 10px;
+        }
+        .greenhouse-card input, .greenhouse-card select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .greenhouse-card .actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .greenhouse-card .actions button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .save-btn {
+            background-color: red;
+            color: white;
+        }
+        .delete-btn {
+            background-color: #d9534f;
+            color: white;
+        }
+        footer {
+            background-color: black;
+            padding: 10px;
+            text-align: right;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Vivero vital</div>
+        <div class="toggle-profile">
+            <input type="checkbox" id="toggle">
+            <img src="https://img.icons8.com/ios-glyphs/30/user.png" alt="user"/>
+        </div>
+    </header>
+    <div class="search-container">
+        <input type="text" placeholder="Search">
+    </div>
+    <div class="nav-buttons">
+        <button>Registrar invernaderos</button>
+        <button>Control invernaderos</button>
+        <button>Control de humedad</button>
+        <button>Control de piso</button>
+        <button>Enfermedades</button>
+    </div>
+    <div style="padding: 0 20px; font-weight: bold;">Filtrar: Invernaderos ▼</div>
+    <div class="greenhouse-list">
+        <div class="greenhouse-card">
+            <label>Nombre del invernadero:</label>
+            <input type="text" value="Invernadero Las Flores">
+            <label>Capacidad (plantas):</label>
+            <input type="text" value="2500">
+            <label>Sistema de riego:</label>
+            <select><option>Manual</option></select>
+            <label>Tipo de cultivo:</label>
+            <input type="text" value="Rosas">
+            <label>Fecha de creación:</label>
+            <input type="text" value="12/04/2020">
+            <label>Responsable del invernadero:</label>
+            <input type="text" value="Juan Pérez">
+            <div class="actions">
+                <button class="save-btn">Guardar</button>
+                <button class="delete-btn">Cancelar</button>
+            </div>
+        </div>
+        <div class="greenhouse-card">
+            <label>Nombre del invernadero:</label>
+            <input type="text" value="Invernadero Los Andes">
+            <label>Capacidad (plantas):</label>
+            <input type="text" value="2000">
+            <label>Sistema de riego:</label>
+            <select>
+                <option>Manual</option>
+                <option>Automatizado</option>
+                <option>Por goteo</option>
+            </select>
+            <label>Tipo de cultivo:</label>
+            <input type="text" value="Lirios">
+            <label>Fecha de creación:</label>
+            <input type="text" value="21/05/2019">
+            <label>Responsable del invernadero:</label>
+            <input type="text" value="Maria López">
+            <div class="actions">
+                <button class="save-btn">Guardar</button>
+                <button class="delete-btn">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="https://img.freepik.com/vector-premium/planta-jardin-ilustracion-vector-invernadero-personas-personaje-dibujos-animados-jardineria-naturaleza-hombre-mujer-persona-tiene-hobby-agricultura_169479-2862.jpg" position="relative" alt="">;
+    </div>
+    <footer>
+        Menu
+    </footer>
+</body>
+</html>
